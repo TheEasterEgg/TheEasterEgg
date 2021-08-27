@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/egg.png" type="icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter Egg</title>
+</head>
+<body>
+
+<div id="DivGeneral" class="">
+    
+
+    <!-------------------------------------------------------------------------------
+        (trouver le lien)
+
+    https://discord.gg/
+    en sixième position la première lettre de l'alphabet est placée.
+    en première position on trouve le chiffre entre 1 et 3.
+    en deuxième position on peut trouver la quatrième lettre de l'alphabet.
+    après les deux premières lettres il y a "UF" en majuscules suivi de "va".
+    Et enfin a la fin nous pouvons rajouter "7D3"
+   ----------------------------------------------------------------------------------->
+    
+   <div class="DivPart">
+    <fieldset class="FieldsPart">
+            <h3 id="ScoreF"></h3>
+    </fieldset>
+    <br>
+    <br>
+    <b></b>
+</div>
+
+<div class="MyDivColor">
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input class="nav_in" id="nav_in" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a onclick="MaFonction(1)"><li>Accueil</li></a>
+            <a onclick="MaFonction(2)"><li>Règles</li></a>
+            <a class="cacher" id="LienIndice" onclick="MyNewFonction(2)"><li>Indice</li></a>
+          </ul>
+        </div>
+    </nav>
+</div>
+<br>
+
+<div id="DivAccueil" class="">
+    <div class="MonCadre">
+        <fieldset>
+            <h1>Accueil</h1>
+        </fieldset>
+        <br>
+    </div>
+    <div class="DivMesRegles">
+            <img class="MonImgNb2" src="img/indice.png" alt="">
+        
+    </div>
+
+    </div>
+
+
+<div id="DivRegles" class="cacher">
+    <div class="MonCadre">
+        <fieldset>
+            <h1>Règles</h1>
+        </fieldset>
+    </div>
+    <div class="DivMesRegles">
+        <fieldset class="FieldsMesRegles">
+            <p class="MyText">
+                Bonjour, vous avez été choisi pour participer à l'Easter Egg.
+                <br>
+                <br>
+                Le but de ce jeu est de trouver le site mère, ou vous pourrez gagner un prix.
+                <br>
+                <br>
+                En décodant les informations que nous vous donnerons vous pourrez accéder à un serveur vous permettant de vous aider entre participants afin de trouver l'indice final.
+                <br>
+                <br>
+                ATTENTION, ce jeu ne peut comporter qu'un seul vainqueur. Tout est autorisé (mentir aux participants, les DDOS sont permis, etc)
+                <br>
+                <br>  
+                <br>
+                <u><strong>Vous avez 1 mois</strong></u>     
+    </p>
+    <div id="DivIndice" class="cacher">
+        <fieldset class="MonFields">
+            <h3><center><u>Voici le quatrieme indice:</u></center></h3>
+
+            <center><p style="margin-top: 5em;">Afin d'accéder à la prochaine épreuve vous devrez inspecter le site dans les moindres recoins, bonne chance. </p></center>
+    </fieldset>
+        </fieldset>
+        </div>
+        
+      </div>
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <button onclick="MyNewFonction(1)" class="Boutton"></button>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+
+
+@font-face {
+    font-family: Comfortaa;
+    src: url("police/comfortaa.ttf");
+}
+/*---------------------------------------------
+Div-field
+---------------------------------------------*/
+.cacher{
+    display: none;
+}
+.DivPart{
+    display: flex;
+    justify-content: flex-end;
+}
+.FieldsPart{
+    background-color: rgba(243, 160, 65, 0);
+    border-color: rgba(243, 161, 65, 0.79);
+    border-top: none;
+    border-right: none;
+    border-radius: 0px 0px 0px 10px;
+    color: #fff;
+}
+.MonCadre{
+  display: flex;
+  justify-content: center;
+}
+.MonCadre fieldset{
+  width: 15vw;
+  color: #fff;
+  background-color: rgba(243, 160, 65, 0);
+  border-color: rgba(243, 161, 65, 0.79);
+  border-radius: 1vh;
+  text-align: center;
+}
+.MyText{
+  text-align: center;
+  padding: 5vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.DivMesRegles{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.FieldsMesRegles{
+  background-color: rgba(243, 161, 65, 0.79);
+  
+  border: none;
+  border-width: 5px;
+  width: 30em;
+  height: auto;
+  border-radius: 5vh;
+}
+.FieldsMesReglesN2{
+  background-color: rgba(243, 161, 65, 0.79);
+  border: none;
+  border-width: 5px;
+  width: 30em;
+  height: 60vh;
+  border-radius: 5vh;
+}
+.MonFields{
+  margin-top: 6vh;
+  background-color: #212121;;
+  border: none;
+  border-width: 5px;
+  border-radius: 5vh;
+  height: 45vh;
+  color: white;
+}
+.MonImgNb2{
+  height: 40vh;
+  border-radius: 1vw;
+  display: flex;
+  margin: auto;
+  margin-top: 15vh;
+
+}
+
+
+/*------------------------------------------
+trois barre
+-------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(33, 33, 33, 1);
+    overflow-x: hidden;
+  }
+  [role=navigation]{
+      position: fixed;
+      overflow-x: hidden;
+      z-index: 111;
+  }
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s ease;
+  }
+  #menuToggle a:hover{
+    color: #dadada;
+  }
+  #menuToggle input
+  {
+    display: block;
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2; 
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgba(243, 161, 65, 0.79);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: rgba(243, 161, 65, 0.79);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu
+  {
+    position: absolute;
+    width: 100px;
+    height: 40vh;
+    margin: -100px 0 0 -50px;
+    padding: 100px;
+    padding-top: 125px;
+    border-radius: 0vh 0vh 5vh 0vh;
+  
+    background-color: rgba(243, 160, 65, 0);
+    border-color: rgba(243, 161, 65, 0.79);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0%);
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  #menu li
+  {
+    margin-left: -2em;
+    padding: 10px 0;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+  #menuToggle{
+      position: fixed;
+  }
+
+.Boutton{
+  width: 5vh;
+  height: 5vh;
+  background-color: rgba(33, 33, 33, 1);
+  border: none;
+}
+.BouttonN2{
+  width: 5vh;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.295);
+  border: none;
+}
+.BouttonN2:hover{
+  background-color: rgba(243, 160, 65, 0.452);
+}
+.MyDivFlex{
+  display: flex;
+}
+.Boutton:hover{
+  width: 5vh;
+  height: 5vh;
+  background-color: rgb(56, 56, 56);
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .MonCadre{
+      display: flex;
+      justify-content: center;
+    }
+    .FieldsMesReglesN2{
+      background-color: rgba(243, 161, 65, 0.79);
+      border: none;
+      border-width: 5px;
+      width: 30em;
+      height: auto;
+      border-radius: 5vh;
+    }
+    .FieldsMesRegles{
+      background-color: rgba(243, 161, 65, 0.79);
+      border: none;
+      border-width: 5px;
+      width: 30em;
+      height: auto;
+      border-radius: 5vh;
+    }
+    .MyText{
+      text-align: center;
+      padding: 0.5vh;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media screen and (max-width: 500px) {
+      .MonCadre{
+        display: flex;
+        justify-content: center;
+      }
+      .FieldsMesReglesN2{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 25em;
+        height: auto;
+        border-radius: 5vh;
+      }
+      .FieldsMesRegles{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 25em;
+        height: auto;
+        border-radius: 5vh;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .MonCadre{
+        display: flex;
+        justify-content: center;
+      }
+      .FieldsMesReglesN2{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 20em;
+        height: auto;
+        border-radius: 5vh;
+      }
+      .FieldsMesRegles{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 20em;
+        height: auto;
+        border-radius: 5vh;
+      }
+    }
+    @media screen and (max-width: 300px) {
+      .MonCadre{
+        display: flex;
+        justify-content: center;
+      }
+      .FieldsMesReglesN2{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 15em;
+        height: auto;
+        border-radius: 5vh;
+      }
+      .FieldsMesRegles{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 15em;
+        height: auto;
+        border-radius: 5vh;
+      }
+    }
+    @media screen and (max-width: 200px) {
+      .MonCadre{
+        display: flex;
+        justify-content: center;
+      }
+      .FieldsMesReglesN2{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 10em;
+        height: auto;
+        border-radius: 5vh;
+      }
+      .FieldsMesRegles{
+        background-color: rgba(243, 161, 65, 0.79);
+        border: none;
+        border-width: 5px;
+        width: 10em;
+        height: auto;
+        border-radius: 5vh;
+      }
+    }
+  }
